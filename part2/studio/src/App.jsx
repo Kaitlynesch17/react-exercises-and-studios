@@ -1,6 +1,8 @@
 import "./App.css";
 import RateARecipe from "./components/RateARecipe";
 import Button from "./components/Button";
+import SaveButton from "./components/SaveButton";
+import ClickedButton from "./components/ClickedButton";
 import AuthorInfo from "./components/AuthorInfo";
 import IngredientList from "./components/Ingredients";
 import RecipeImage from "./components/RecipeImage";
@@ -12,7 +14,9 @@ export default function App() {
       <RecipeImage />
       <RecipeName />
       <RateARecipe rating={4} />
-      <Button saveButton={true} />
+      <Button saveButton={false} />
+      {/* <SaveButton />  */}
+      {/* <ClickedButton/> */}
       <AuthorInfo />
       <IngredientList />
     </>
