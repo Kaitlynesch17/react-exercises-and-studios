@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/";
+   let authorPhoto = "https://joyfoodsunshine.com/wp-content/uploads/2023/04/cropped-author-avatar-128x128.jpg";
+   let authorName = "Laura";
 
    return (
       <div>
-         <img src={authorPhoto} alt = "" style={{objectFit: "contain", borderRadius: "50%"}} />
+         <img src={authorPhoto} alt = "Author Headshot" style={{objectFit: "contain", borderRadius: "50%"}} />
          <div>
             <h3>{authorName}</h3>
             <a href={authorLink}></a> 
@@ -17,7 +17,13 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = [
+      "Butter",
+      "White Sugar",
+      "Brown Sugar",
+      "Sea Salt",
+      "Chocoloate Chips"
+    ];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -36,8 +42,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>The Best Chocolate Chip Cookie Recipe Ever</h1>
+            <p>This is the best chocolate chip cookies recipe ever! No funny ingredients, no chilling time, etc. Just a simple, straightforward, amazingly delicious, doughy yet still fully cooked, chocolate chip cookie that turns out perfectly every single time!</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -49,7 +55,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://joyfoodsunshine.com/wp-content/uploads/2018/02/best-chocolate-chip-cookies-recipe-1.jpg" alt="Cookie Recipe Image" className="imageUpdates"/>
    );
 }
 
